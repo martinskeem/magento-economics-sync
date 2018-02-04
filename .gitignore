@@ -107,3 +107,4 @@ secrets.py
 /include
 /share
 pip-selfcheck.json
+.vscode
