@@ -1,5 +1,5 @@
 # magento-economics-sync
-Sync Products and Orders to e-conomic from magento 1.9.* using APIs. Emits logging into subfolder called /log as configured in logging.conf
+Sync Products and Orders to e-conomic from magento 1.9.* using APIs of each system. 
 
 
 ## Configuration
@@ -12,5 +12,8 @@ magento_api_pass = ""               # xmlrpc api user password
 # secrets obtained from economics administrative user interface
 economics_headers = {'X-AppSecretToken': '',
                      'X-AgreementGrantToken': '',
-                     'Content-Type': 'application/json'}```
+                     'Content-Type': 'application/json'}
+```
+The script Synchronizes changes done last day by default (this can be changed in sync.py with the delta_load_days parameter). If the job is scheduled to more than once per day (e.g. hourly), this is sufficient. Later, this may be updated to handle delta load more elegantly by maintaining state of already synchronized entities.
 
+Emits logging into subfolder called /log, this has to be created - or path can be changed in logging.conf.
