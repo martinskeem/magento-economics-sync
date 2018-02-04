@@ -46,7 +46,7 @@ economics_headers = {'X-AppSecretToken': '',
 The script Synchronizes changes done last day by default (this can be changed in `sync.py` with the `delta_load_days parameter`). If the job is scheduled to more than once per day (e.g. every 30 minutes), this is sufficient. Later, this may be updated to handle delta load more elegantly by maintaining state of already synchronized entities. Example crontab schedule that synchronizes data every 30 minutes:
 
 ```bash
-/30 * * * * /var/python/magento-sync/bin/python /var/python/magento-sync/sync.py
+/30 * * * * /var/python/magento-economics-sync/bin/python /var/python/magento-economics-sync/sync.py
 ```
 
 
