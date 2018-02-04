@@ -3,7 +3,6 @@ from economics_customers import customer_merge
 from magento_orders import orders_list, order_info
 from magento_products import products_list, product_info
 from economics_invoices import invoice_merge
-from magento_quotes import email_unpaid_quotes
 import logging
 import logging.config
 import os
@@ -19,7 +18,6 @@ def main():
 
     sync_products(delta_load_days=1)
     sync_orders(delta_load_days=1)
-    email_unpaid_quotes()
 
     logging.info('finished')
 
