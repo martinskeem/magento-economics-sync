@@ -101,3 +101,9 @@ ENV/
 .mypy_cache/
 
 secrets.py
+
+/bin
+/lib
+/include
+/share
+pip-selfcheck.json
