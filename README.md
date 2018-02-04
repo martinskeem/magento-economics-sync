@@ -2,6 +2,27 @@
 Sync Products and Orders to e-conomic from magento 1.9.* using APIs of each system. The solution is created to one specific use case and may set certain attributes to constants - it would likely have to be adapted to work correctly for other shops.
 
 
+## Configuration - get code, set up virtual environment, install dependencies
+Navigate to a folder where the folder with the code should be located.
+
+`git clone https://github.com/martinskeem/magento-economics-sync.git`
+
+create virtual environment
+
+```bash
+cd magento-economics-sync
+virtualenv . -p /usr/bin/python3`
+```
+
+activate the virtual environment
+
+`source bin/activate`
+
+install dependencies
+
+`pip install -r requirements.txt`
+
+
 ## Configuration - secrets.py
 In order for the synchronization scripts to work, various configuration variables need to be set in a file named `secrets.py`. Add the file to the root of the project folder and use below template:
 
