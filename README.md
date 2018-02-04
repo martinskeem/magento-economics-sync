@@ -22,6 +22,10 @@ install dependencies
 
 `pip install -r requirements.txt`
 
+create log folder
+
+`mkdir log`
+
 
 ## Configuration - secrets.py
 In order for the synchronization scripts to work, various configuration variables need to be set in a file named `secrets.py`. Add the file to the root of the project folder and use below template:
@@ -47,7 +51,7 @@ The script Synchronizes changes done last day by default (this can be changed in
 
 
 ## Configuration - logging
-Emits logging into subfolder called `/log`, this has to be created - or path can be changed in `logging.conf`.
+Emits logging to console and flat file in subfolder `/log`. This can be configured in `logging.conf`.
 
 
 ## Configuration - e-conomic constants
