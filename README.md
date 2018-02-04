@@ -1,5 +1,5 @@
 # magento-economics-sync
-Sync Products and Orders to e-conomic from magento 1.9.* using APIs
+Sync Products and Orders to e-conomic from magento 1.9.* using APIs. Emits logging into subfolder called /log as configured in logging.conf
 
 
 ## Configuration
